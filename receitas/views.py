@@ -4,4 +4,14 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request, "index.html")
+    context = {
+        'img': 'pizza.png'
+    }
+    return render(request, "receitas/templates/index.html", context=context)
+
+
+def receitas(request):
+    context = {
+        'img': 'hamburger.png'
+    }
+    return render(request, 'receita.html', context=context)
