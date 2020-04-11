@@ -1,0 +1,6 @@
+# my.cnf
+[client]
+database =  alura_receita
+user = alura
+password = welcome1
+default-character-set = utf8
